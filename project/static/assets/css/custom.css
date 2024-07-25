@@ -1,0 +1,29 @@
+/* static/css/custom.css */
+.card {
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    color: #333;
+}
+
+.card-text {
+    color: #555;
+}
+
+img {
+    border-radius: 0 !important;
+}
+
+.bg-accent-subtle {
+    background-color: #e8f1f2 !important;
+}
+
+.bg-primary-subtle {
+    background-color: #d1e7dd !important;
+}

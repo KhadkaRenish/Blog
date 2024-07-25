@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} About {% endblock title %}
+{% block hero %}
+
+<section class="py-3 py-md-5 py-xl-8 bg-light">
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-12 text-center">
+          <h2 class="display-3 fw-bold mb-4">About</h2>
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8">
+              <p class="lead text-secondary">{{ post.title }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="py-3 py-md-5 py-xl-10">
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-12 col-lg-6">
+                <div class="card h-100 border-0 shadow" style="background-color: #f8d7da;">
+                    <div class="row g-0">
+                        <div class="col-md-5">
+                            <img src="{{ post.chooseus_img.url }}" class="img-fluid rounded-start h-100" alt="Choose Us Image" style="object-fit: cover;">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <h2 class="card-title h4 mb-3">Why Choose Us?</h2>
+                                <p class="card-text">{{ post.chooseus }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="card h-100 border-0 shadow" style="background-color: #ffffff;">
+                    <div class="row g-0">
+                        <div class="col-md-5">
+                            <img src="{{ post.visionary_img.url }}" class="img-fluid rounded-start h-100" alt="Visionary Team Image" style="object-fit: cover;">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <h2 class="card-title h4 mb-3">Visionary Team</h2>
+                                <p class="card-text">{{ post.visionary }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock hero %}
